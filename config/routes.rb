@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root 'application#index'
-  resources :users
+  resources :customers
   resources :companies
   devise_for :users
+  resources :users
+
+  root 'application#index'
 end
