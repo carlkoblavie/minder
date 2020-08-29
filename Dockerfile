@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y yarn
 # Run yarn install to install JavaScript dependencies.
 RUN yarn install --check-files
 
+# add tailwindcss to the project
+RUN yarn add semantic-ui-sass jquery popper.js
+
 # Set "rails server -b 0.0.0.0" as the command to
 # run when this container starts.
 CMD ["rails", "server", "-b", "0.0.0.0"]

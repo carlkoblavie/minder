@@ -596,3 +596,1098 @@ Processing by ApplicationController#index as HTML
 Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms | Allocations: 4433)
 
 
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:08:41 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 13.6ms | Allocations: 290)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e9196d64c6f12f81ea90
+Version: webpack 4.44.1
+Time: 9292ms
+Built at: 08/29/2020 11:09:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-81ec706507f2d73bfa8e.js   6.26 KiB  application  [emitted] [immutable]  application
+js/application-81ec706507f2d73bfa8e.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-81ec706507f2d73bfa8e.js js/application-81ec706507f2d73bfa8e.js.map
+[./app/javascript/packs/application.js] 2.37 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /code/app/javascript/packs/application.js: Support for the experimental syntax 'decorators-legacy' isn't currently enabled (11:1):
+
+   9 | require("channels")
+  10 | 
+> 11 | @import "tailwindcss/base";
+     | ^
+  12 | @import "tailwindcss/components";
+  13 | @import "tailwindcss/utilities";
+  14 | 
+    at Parser._raise (/code/node_modules/@babel/parser/lib/index.js:763:17)
+    at Parser.raiseWithData (/code/node_modules/@babel/parser/lib/index.js:756:17)
+    at Parser.expectOnePlugin (/code/node_modules/@babel/parser/lib/index.js:8945:18)
+    at Parser.parseDecorator (/code/node_modules/@babel/parser/lib/index.js:11532:10)
+    at Parser.parseDecorators (/code/node_modules/@babel/parser/lib/index.js:11514:30)
+    at Parser.parseStatement (/code/node_modules/@babel/parser/lib/index.js:11345:12)
+    at Parser.parseBlockOrModuleBlockBody (/code/node_modules/@babel/parser/lib/index.js:11930:25)
+    at Parser.parseBlockBody (/code/node_modules/@babel/parser/lib/index.js:11916:10)
+    at Parser.parseTopLevel (/code/node_modules/@babel/parser/lib/index.js:11279:10)
+    at Parser.parse (/code/node_modules/@babel/parser/lib/index.js:12984:10)
+    at parse (/code/node_modules/@babel/parser/lib/index.js:13037:38)
+    at parser (/code/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/code/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/code/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/code/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/code/node_modules/gensync/index.js:254:32)
+    at gen.next (/code/node_modules/gensync/index.js:266:13)
+    at async.call.value (/code/node_modules/gensync/index.js:216:11)
+    at errback.call (/code/node_modules/gensync/index.js:184:28)
+    at runGenerator.errback (/code/node_modules/@babel/core/lib/gensync-utils/async.js:72:7)
+    at val (/code/node_modules/gensync/index.js:108:33)
+    at step (/code/node_modules/gensync/index.js:280:14)
+    at gen.next (/code/node_modules/gensync/index.js:266:13)
+    at async.call.value (/code/node_modules/gensync/index.js:216:11)
+
+Completed 200 OK in 20399ms (Views: 20391.2ms | ActiveRecord: 0.0ms | Allocations: 9223)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:11:29 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: 0d68c8465362c85be36d
+Version: webpack 4.44.1
+Time: 4210ms
+Built at: 08/29/2020 11:11:40 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-78130a8a56d04e13865e.js    124 KiB  application  [emitted] [immutable]  application
+js/application-78130a8a56d04e13865e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-78130a8a56d04e13865e.js js/application-78130a8a56d04e13865e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 10236ms (Views: 10234.2ms | ActiveRecord: 0.0ms | Allocations: 4863)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:13:34 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 3.2ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 87.2ms | ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:13:37 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.0ms | Allocations: 3792)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:13:38 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms | Allocations: 3800)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:14:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 2.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 4491)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:14:02 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 3778)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:14:03 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms | Allocations: 3792)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:14:05 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 66.9ms | ActiveRecord: 0.0ms | Allocations: 3792)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:40:58 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 8.6ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 218ms (Views: 210.9ms | ActiveRecord: 0.0ms | Allocations: 7521)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:42:23 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 2.9ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 0.0ms | Allocations: 4503)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:43:27 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 3.9ms | Allocations: 71)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: 0d68c8465362c85be36d
+Version: webpack 4.44.1
+Time: 5195ms
+Built at: 08/29/2020 11:43:39 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-78130a8a56d04e13865e.js    124 KiB  application  [emitted] [immutable]  application
+js/application-78130a8a56d04e13865e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-78130a8a56d04e13865e.js js/application-78130a8a56d04e13865e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 12408ms (Views: 12406.5ms | ActiveRecord: 0.0ms | Allocations: 5603)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:44:24 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.0ms | Allocations: 3793)
+
+
+Started GET "/" for 172.21.0.1 at 2020-08-29 11:44:29 +0000
+Cannot render console from 172.21.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms | Allocations: 3796)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:12:33 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 11.5ms | Allocations: 290)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5d9302fa623b2ca67bea
+Version: webpack 4.44.1
+Time: 6102ms
+Built at: 08/29/2020 1:12:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ddc47e63f1d4f681322a.js    124 KiB  application  [emitted] [immutable]  application
+js/application-ddc47e63f1d4f681322a.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ddc47e63f1d4f681322a.js js/application-ddc47e63f1d4f681322a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 780 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'semantic-ui-sass' in '/code/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 19:0-27
+
+Completed 200 OK in 15644ms (Views: 15635.0ms | ActiveRecord: 0.0ms | Allocations: 24020)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:22:12 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: 9bd8e0e975e6521dc69d
+Version: webpack 4.44.1
+Time: 11707ms
+Built at: 08/29/2020 1:22:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bd8462b67d4d96b4a014.js    854 KiB  application  [emitted] [immutable]  application
+js/application-bd8462b67d4d96b4a014.js.map    982 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bd8462b67d4d96b4a014.js js/application-bd8462b67d4d96b4a014.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 780 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 27 hidden modules
+
+Completed 200 OK in 18524ms (Views: 18522.3ms | ActiveRecord: 0.0ms | Allocations: 4931)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:22:41 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.3ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.0ms | Allocations: 3823)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:30:58 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: 9bd8e0e975e6521dc69d
+Version: webpack 4.44.1
+Time: 4439ms
+Built at: 08/29/2020 1:31:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bd8462b67d4d96b4a014.js    854 KiB  application  [emitted] [immutable]  application
+js/application-bd8462b67d4d96b4a014.js.map    982 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bd8462b67d4d96b4a014.js js/application-bd8462b67d4d96b4a014.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 780 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 27 hidden modules
+
+Completed 200 OK in 10857ms (Views: 10856.0ms | ActiveRecord: 0.0ms | Allocations: 4887)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:33:30 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.5ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: ad3dd1d4a8e4747e8af0
+Version: webpack 4.44.1
+Time: 8253ms
+Built at: 08/29/2020 1:33:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c6ba4358e601c7fc77f8.js   1.14 MiB  application  [emitted] [immutable]  application
+js/application-c6ba4358e601c7fc77f8.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c6ba4358e601c7fc77f8.js js/application-c6ba4358e601c7fc77f8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 780 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+Completed 200 OK in 14397ms (Views: 14396.1ms | ActiveRecord: 0.0ms | Allocations: 4914)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:35:33 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 3.2ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 230.8ms | Allocations: 77425)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 0.0ms | Allocations: 82135)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000558563e75b10>:0x0000558563e0ed70>):
+    1: <% if user_signed_in? %>
+    2:   <div class="ui fixed inverted menu">
+    3:     <div class="ui container">
+    4:       <a href="#" class="header item">
+  
+app/views/layouts/_navbar.html.erb:1
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:35:57 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 2.2ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1044)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms | Allocations: 5783)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% #if user_signed_in? %>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Project Venus
+      </a>
+      <a href="/" class="item">Dashboard</a>
+      <a href="/customers" class="item">Customers</a>
+      <a href="/orders" class="item">Orders</a>
+      <a href="/price_lists" class="item">Price List</a>
+      <a href="#" class="item">Payments</a>
+      <a href="#" class="item">Team</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="right menu">
+         <a href="#" class="item"><%= current_user.first_name %> <%= current_user.last_name %></a>
+         <a href="#" class="item">Log Out</a>
+      </div>
+    </div>
+  </div>
+<% end %>
+):
+1:    <% #if user_signed_in? %>
+2:      <div class="ui fixed inverted menu">
+3:        <div class="ui container">
+4:          <a href="#" class="header item">
+5:            Project Venus
+6:          </a>
+7:          <a href="/" class="item">Dashboard</a>
+8:          <a href="/customers" class="item">Customers</a>
+9:          <a href="/orders" class="item">Orders</a>
+10:          <a href="/price_lists" class="item">Price List</a>
+11:          <a href="#" class="item">Payments</a>
+12:          <a href="#" class="item">Team</a>
+13:          <div class="ui simple dropdown item">
+14:            Dropdown <i class="dropdown icon"></i>
+15:            <div class="menu">
+16:              <a class="item" href="#">Link Item</a>
+17:              <a class="item" href="#">Link Item</a>
+18:              <div class="divider"></div>
+19:              <div class="header">Header Item</div>
+20:              <div class="item">
+21:                <i class="dropdown icon"></i>
+22:                Sub Menu
+23:                <div class="menu">
+24:                  <a class="item" href="#">Link Item</a>
+25:                  <a class="item" href="#">Link Item</a>
+26:                </div>
+27:              </div>
+28:              <a class="item" href="#">Link Item</a>
+29:            </div>
+30:          </div>
+31:          <div class="right menu">
+32:             <a href="#" class="item"><%= current_user.first_name %> <%= current_user.last_name %></a>
+33:             <a href="#" class="item">Log Out</a>
+34:          </div>
+35:        </div>
+36:      </div>
+37:    <% end %>
+  
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:36:36 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 2.5ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 1057)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms | Allocations: 5755)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% #if user_signed_in? %>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Project Venus
+      </a>
+      <a href="/" class="item">Dashboard</a>
+      <a href="/customers" class="item">Customers</a>
+      <a href="/orders" class="item">Orders</a>
+      <a href="/price_lists" class="item">Price List</a>
+      <a href="#" class="item">Payments</a>
+      <a href="#" class="item">Team</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="right menu">
+         <a href="#" class="item">
+         <%= #current_user.first_name %> <%= #current_user.last_name %></a>
+         <a href="#" class="item">Log Out</a>
+      </div>
+    </div>
+  </div>
+<% end %>
+):
+1:    <% #if user_signed_in? %>
+2:      <div class="ui fixed inverted menu">
+3:        <div class="ui container">
+4:          <a href="#" class="header item">
+5:            Project Venus
+6:          </a>
+7:          <a href="/" class="item">Dashboard</a>
+8:          <a href="/customers" class="item">Customers</a>
+9:          <a href="/orders" class="item">Orders</a>
+10:          <a href="/price_lists" class="item">Price List</a>
+11:          <a href="#" class="item">Payments</a>
+12:          <a href="#" class="item">Team</a>
+13:          <div class="ui simple dropdown item">
+14:            Dropdown <i class="dropdown icon"></i>
+15:            <div class="menu">
+16:              <a class="item" href="#">Link Item</a>
+17:              <a class="item" href="#">Link Item</a>
+18:              <div class="divider"></div>
+19:              <div class="header">Header Item</div>
+20:              <div class="item">
+21:                <i class="dropdown icon"></i>
+22:                Sub Menu
+23:                <div class="menu">
+24:                  <a class="item" href="#">Link Item</a>
+25:                  <a class="item" href="#">Link Item</a>
+26:                </div>
+27:              </div>
+28:              <a class="item" href="#">Link Item</a>
+29:            </div>
+30:          </div>
+31:          <div class="right menu">
+32:             <a href="#" class="item">
+33:             <%= #current_user.first_name %> <%= #current_user.last_name %></a>
+34:             <a href="#" class="item">Log Out</a>
+35:          </div>
+36:        </div>
+37:      </div>
+38:    <% end %>
+  
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:37:36 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 1042)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms | Allocations: 4890)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% #if user_signed_in? %>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Project Venus
+      </a>
+      <a href="/" class="item">Dashboard</a>
+      <a href="/customers" class="item">Customers</a>
+      <a href="/orders" class="item">Orders</a>
+      <a href="/price_lists" class="item">Price List</a>
+      <a href="#" class="item">Payments</a>
+      <a href="#" class="item">Team</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="right menu">
+         <a href="#" class="item">
+         <%= #current_user.first_name %> <%= #current_user.last_name %></a>
+         <a href="#" class="item">Log Out</a>
+      </div>
+    </div>
+  </div>
+<% end %>
+):
+1:    <% #if user_signed_in? %>
+2:      <div class="ui fixed inverted menu">
+3:        <div class="ui container">
+4:          <a href="#" class="header item">
+5:            Project Venus
+6:          </a>
+7:          <a href="/" class="item">Dashboard</a>
+8:          <a href="/customers" class="item">Customers</a>
+9:          <a href="/orders" class="item">Orders</a>
+10:          <a href="/price_lists" class="item">Price List</a>
+11:          <a href="#" class="item">Payments</a>
+12:          <a href="#" class="item">Team</a>
+13:          <div class="ui simple dropdown item">
+14:            Dropdown <i class="dropdown icon"></i>
+15:            <div class="menu">
+16:              <a class="item" href="#">Link Item</a>
+17:              <a class="item" href="#">Link Item</a>
+18:              <div class="divider"></div>
+19:              <div class="header">Header Item</div>
+20:              <div class="item">
+21:                <i class="dropdown icon"></i>
+22:                Sub Menu
+23:                <div class="menu">
+24:                  <a class="item" href="#">Link Item</a>
+25:                  <a class="item" href="#">Link Item</a>
+26:                </div>
+27:              </div>
+28:              <a class="item" href="#">Link Item</a>
+29:            </div>
+30:          </div>
+31:          <div class="right menu">
+32:             <a href="#" class="item">
+33:             <%= #current_user.first_name %> <%= #current_user.last_name %></a>
+34:             <a href="#" class="item">Log Out</a>
+35:          </div>
+36:        </div>
+37:      </div>
+38:    <% end %>
+  
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:37:53 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 18.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 1055)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms | Allocations: 5751)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% #if user_signed_in? %>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Project Venus
+      </a>
+      <a href="/" class="item">Dashboard</a>
+      <a href="/customers" class="item">Customers</a>
+      <a href="/orders" class="item">Orders</a>
+      <a href="/price_lists" class="item">Price List</a>
+      <a href="#" class="item">Payments</a>
+      <a href="#" class="item">Team</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="right menu">
+         <a href="#" class="item">
+         <%= # current_user.first_name %> <%= # current_user.last_name %></a>
+         <a href="#" class="item">Log Out</a>
+      </div>
+    </div>
+  </div>
+<% end %>
+):
+1:    <% #if user_signed_in? %>
+2:      <div class="ui fixed inverted menu">
+3:        <div class="ui container">
+4:          <a href="#" class="header item">
+5:            Project Venus
+6:          </a>
+7:          <a href="/" class="item">Dashboard</a>
+8:          <a href="/customers" class="item">Customers</a>
+9:          <a href="/orders" class="item">Orders</a>
+10:          <a href="/price_lists" class="item">Price List</a>
+11:          <a href="#" class="item">Payments</a>
+12:          <a href="#" class="item">Team</a>
+13:          <div class="ui simple dropdown item">
+14:            Dropdown <i class="dropdown icon"></i>
+15:            <div class="menu">
+16:              <a class="item" href="#">Link Item</a>
+17:              <a class="item" href="#">Link Item</a>
+18:              <div class="divider"></div>
+19:              <div class="header">Header Item</div>
+20:              <div class="item">
+21:                <i class="dropdown icon"></i>
+22:                Sub Menu
+23:                <div class="menu">
+24:                  <a class="item" href="#">Link Item</a>
+25:                  <a class="item" href="#">Link Item</a>
+26:                </div>
+27:              </div>
+28:              <a class="item" href="#">Link Item</a>
+29:            </div>
+30:          </div>
+31:          <div class="right menu">
+32:             <a href="#" class="item">
+33:             <%= # current_user.first_name %> <%= # current_user.last_name %></a>
+34:             <a href="#" class="item">Log Out</a>
+35:          </div>
+36:        </div>
+37:      </div>
+38:    <% end %>
+  
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected `class', expecting ')'
+app/views/layouts/_navbar.html.erb:34: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/layouts/_navbar.html.erb:35: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:36: syntax error, unexpected '<'
+app/views/layouts/_navbar.html.erb:37: unknown regexp options - dv
+app/views/layouts/_navbar.html.erb:40: unterminated string meets end of file
+app/views/layouts/_navbar.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:38:18 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 3.2ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 1019)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms | Allocations: 5715)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% #if user_signed_in? %>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        Project Venus
+      </a>
+      <a href="/" class="item">Dashboard</a>
+      <a href="/customers" class="item">Customers</a>
+      <a href="/orders" class="item">Orders</a>
+      <a href="/price_lists" class="item">Price List</a>
+      <a href="#" class="item">Payments</a>
+      <a href="#" class="item">Team</a>
+      <div class="ui simple dropdown item">
+        Dropdown <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="#">Link Item</a>
+          <a class="item" href="#">Link Item</a>
+          <div class="divider"></div>
+          <div class="header">Header Item</div>
+          <div class="item">
+            <i class="dropdown icon"></i>
+            Sub Menu
+            <div class="menu">
+              <a class="item" href="#">Link Item</a>
+              <a class="item" href="#">Link Item</a>
+            </div>
+          </div>
+          <a class="item" href="#">Link Item</a>
+        </div>
+      </div>
+      <div class="right menu">
+         <a href="#" class="item">
+         <a href="#" class="item">Log Out</a>
+      </div>
+    </div>
+  </div>
+<% end %>
+):
+1:    <% #if user_signed_in? %>
+2:      <div class="ui fixed inverted menu">
+3:        <div class="ui container">
+4:          <a href="#" class="header item">
+5:            Project Venus
+6:          </a>
+7:          <a href="/" class="item">Dashboard</a>
+8:          <a href="/customers" class="item">Customers</a>
+9:          <a href="/orders" class="item">Orders</a>
+10:          <a href="/price_lists" class="item">Price List</a>
+11:          <a href="#" class="item">Payments</a>
+12:          <a href="#" class="item">Team</a>
+13:          <div class="ui simple dropdown item">
+14:            Dropdown <i class="dropdown icon"></i>
+15:            <div class="menu">
+16:              <a class="item" href="#">Link Item</a>
+17:              <a class="item" href="#">Link Item</a>
+18:              <div class="divider"></div>
+19:              <div class="header">Header Item</div>
+20:              <div class="item">
+21:                <i class="dropdown icon"></i>
+22:                Sub Menu
+23:                <div class="menu">
+24:                  <a class="item" href="#">Link Item</a>
+25:                  <a class="item" href="#">Link Item</a>
+26:                </div>
+27:              </div>
+28:              <a class="item" href="#">Link Item</a>
+29:            </div>
+30:          </div>
+31:          <div class="right menu">
+32:             <a href="#" class="item">
+33:             <a href="#" class="item">Log Out</a>
+34:          </div>
+35:        </div>
+36:      </div>
+37:    <% end %>
+  
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/_navbar.html.erb:39: syntax error, unexpected `end', expecting end-of-input
+app/views/layouts/application.html.erb:16
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:38:30 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 3.8ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 110)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 0.0ms | Allocations: 4833)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:38:46 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms | Allocations: 3885)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:39:27 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 74ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 3881)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:40:28 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.0ms | Allocations: 3880)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:40:30 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms | Allocations: 3867)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:40:31 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms | Allocations: 3879)
+
+
+Started GET "/customers" for 172.22.0.1 at 2020-08-29 13:40:32 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/customers"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:40:34 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms | Allocations: 3886)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:40:48 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.0ms | Allocations: 3875)
+
+
+Started GET "/" for 172.22.0.1 at 2020-08-29 13:55:18 +0000
+Cannot render console from 172.22.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering application/index.erb within layouts/application
+  Rendered application/index.erb within layouts/application (Duration: 20.3ms | Allocations: 290)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /code/public/packs
+[Webpacker] Hash: ad3dd1d4a8e4747e8af0
+Version: webpack 4.44.1
+Time: 8375ms
+Built at: 08/29/2020 1:55:38 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c6ba4358e601c7fc77f8.js   1.14 MiB  application  [emitted] [immutable]  application
+js/application-c6ba4358e601c7fc77f8.js.map   1.32 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c6ba4358e601c7fc77f8.js js/application-c6ba4358e601c7fc77f8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 780 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 114)
+Completed 200 OK in 19294ms (Views: 19285.6ms | ActiveRecord: 0.0ms | Allocations: 177662)
+
+
